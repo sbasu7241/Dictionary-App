@@ -2,7 +2,9 @@ import json
 
 from difflib import get_close_matches
 
-data = json.load(open("data1.1.json"))
+data = json.load(open("dictionary_compact.json"))
+
+print('\n***** WELCOME TO THE PYTHON ENGLISH DICTIONARY *****\n')
 
 def translate(word):
 	word = word.lower()
@@ -29,9 +31,4 @@ def translate(word):
 word = input("Enter word: ")
 output = translate(word)
 
-if type(output) == list:
-	for item in output:
-		print (item)
-
-else:
-	print(output)
+print("\nMeaning : " + output[0])
