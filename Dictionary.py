@@ -92,27 +92,3 @@ def run(timer=2):
 if __name__ == "__main__":
 	run()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-run()
